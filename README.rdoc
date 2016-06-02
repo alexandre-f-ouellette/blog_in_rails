@@ -1,0 +1,8 @@
+== README
+
+My name is Alexandre Ouellette.
+I have been working in tech for 5 years now, and I am currently studying to become a web developer with CareerFoundry.
+
+This is my first solo Rails app as part of my CareerFoundry course.
+
+Thanks for dropping by!
