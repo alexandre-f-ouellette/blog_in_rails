@@ -1,0 +1,12 @@
+<div class="container posts-container">
+  <h3>To edit this post, please click <%= link_to 'here', edit_post_path(@post) %></h3>
+  <%= link_to 'Back', posts_path %>
+  <div class="row">
+    <div class="col-md-12 post">
+      <%= link_to image_tag(@post.image_url, class: "img-responsive"), @post %>
+      <h2><%= link_to @post.title, @post %></h2>
+      <p class="date">Post was published on: <%= @post.published_date %></p>
+      <p><%= @post.body %></p>
+    </div>
+  </div>
+</div>
