@@ -1,0 +1,11 @@
+<div class="container authors-container">
+  <h3>To edit this author's details, please click <%= link_to 'here', edit_author_path(@author) %></h3>
+  <%= link_to 'Back', authors_path %>
+  <div class="row">
+    <div class="col-md-12 author">
+      <%= link_to image_tag(@author.image_url, class: "img-responsive"), @author %>
+      <h2><%= link_to @author.name, @author %></h2>
+      <p><%= @author.description.html_safe %></p>
+    </div>
+  </div>
+</div>
