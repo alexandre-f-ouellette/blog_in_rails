@@ -10,6 +10,14 @@
 
   <meta name='viewport' content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
+
+  <!-- Include Font Awesome. -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Include Editor style. -->
+  <link href="../css/froala_editor.min.css" rel="stylesheet" type="text/css" />
+  <link href="../css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
 
@@ -30,7 +38,7 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Blog</a></li>
+            <li><a href="/posts">Blog</a></li>
             <li><a href="#">Authors</a></li>
             <li><a href="#">About</a></li>
           </ul>
@@ -40,6 +48,9 @@
     <!-- END OF NAVBAR -->
 
 <%= yield %>
+
+<!-- Include JS files. -->
+  <script type="text/javascript" src="../js/froala_editor.min.js"></script>
 
 </body>
 </html>
