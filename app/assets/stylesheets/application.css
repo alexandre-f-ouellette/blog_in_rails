@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+
+/**** Navigation ****/
+.navbar {
+  background-color: #555;
+  width: 100%;
+}
+
+.navbar-brand {
+  padding: 15px 0 0 20px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.nav li a {
+  padding-left: 2em;
+}
+
+.navbar-header button span {
+  background-color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #555;
+}
+
+/* Typography */
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 1em;
+  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #337ab7;
+}
+
+body {
+  padding-top: 50px;
+}
+
+
