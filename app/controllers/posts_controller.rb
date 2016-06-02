@@ -15,10 +15,12 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+    @authors = Author.all.order('name')
   end
 
   # GET /posts/1/edit
   def edit
+    @authors = Author.all.order('name')
   end
 
   # POST /posts

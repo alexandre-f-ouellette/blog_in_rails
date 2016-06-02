@@ -20,6 +20,10 @@
     <%= f.text_area :body, {id: 'body-wysiwyg'} %>
   </div>
   <div class="field">
+    <%= f.label :author_id %><br>
+    <%= f.select(:author_id, options_from_collection_for_select(@authors, 'id', 'name', @post.author_id)) %>
+  </div>
+  <div class="field">
     <%= f.label :published_date %><br>
     <%= f.datetime_select :published_date %>
   </div>

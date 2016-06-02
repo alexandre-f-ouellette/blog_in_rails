@@ -8,4 +8,13 @@
       <p><%= @author.description.html_safe %></p>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>Posts by this author:</h4>
+      <% @author.posts.each do |post| %>
+        <h5 class="post-title"><%= link_to post.title, post %></h5>
+      <% end %>
+    </div>
+  </div>
 </div>
