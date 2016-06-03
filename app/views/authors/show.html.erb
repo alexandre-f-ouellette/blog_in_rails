@@ -12,8 +12,12 @@
   <div class="row">
     <div class="col-md-12">
       <h4>Posts by this author:</h4>
-      <% @author.posts.each do |post| %>
-        <h5 class="post-title"><%= link_to post.title, post %></h5>
+      <% if @author.posts.empty? %>
+        <p>Author does not have any posts yet</p>
+      <% else %>
+        <% @author.posts.each do |post| %>
+          <h5 class="post-title"><%= link_to post.title, post %></h5>
+        <% end %>
       <% end %>
     </div>
   </div>
